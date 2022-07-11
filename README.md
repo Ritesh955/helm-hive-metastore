@@ -1,5 +1,3 @@
-# <img src="docs/img/hive_helm.png" width="10%"> | HMS Helm Chart 
-
 In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. This Hive chart (package) encapsulates all configurations and components needed to deploy a Hive Metastore service in a Kubernetes cluster.
 
 ## Kubernetes Resources used in this Hive Chart
