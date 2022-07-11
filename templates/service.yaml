@@ -5,8 +5,8 @@ metadata:
   labels:
     {{- include "hive-metastore.labels" $ | trim | nindent 4 }}
 
-spec:
-  {{ .Values.service.type }}
+  spec:
+    {{ .Values.service.type }}
 
   selector:
     {{- include "hive-metastore.selectorLabels" . | nindent 4 }}

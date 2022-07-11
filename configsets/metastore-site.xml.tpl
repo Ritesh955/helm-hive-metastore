@@ -6,11 +6,11 @@
       {{- if eq .Env.HIVE_DB_EXTERNAL "true" }}
         <property>
           <name>javax.jdo.option.ConnectionURL</name>
-          <value>jdbc:postgresql://{{ .Env.HIVE_DB_HOST }}/{{ .Env.HIVE_DB_NAME }}</value>
+          <value>jdbc:mysql://{{ .Env.HIVE_DB_HOST }}/{{ .Env.HIVE_DB_NAME }}?createDatabaseIfNotExist=true</value>
         </property>
         <property>
           <name>javax.jdo.option.ConnectionDriverName</name>
-          <value>org.postgresql.Driver</value>
+          <value>com.mysql.cj.jdbc.Driver</value>
         </property>
         <property>
           <name>javax.jdo.option.ConnectionUserName</name>
